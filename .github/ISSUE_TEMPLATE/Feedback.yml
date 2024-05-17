@@ -19,5 +19,11 @@ body:
       label: Feedback
       description: Please provide your feedback here.
     validations:
+      required: true
+  - type: textarea
+    id: feedbackalan
+    attributes:
+      label: Feedback for Alan
+      description: Please provide your feedback here, I am 100% sure I want any and all feedback
+    validations:
       required: false
-
