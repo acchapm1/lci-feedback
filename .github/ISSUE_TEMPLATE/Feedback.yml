@@ -1,10 +1,10 @@
-name: New Software
-description: File a software request.
-labels: ["software", "request"]
+name: LCI Intermediate - Feedback
+description: Please provide honest feedback 
+labels: ["feedback", "suggestions"]
 body:
   - type: markdown
     attributes:
-      value: "Thank you for taking the time to fill out this Software Request form.  Please fill out the following information to the best of your ability.  This will help us expedite the process of getting the software installed on the HPC systems.  If you have any questions please reach out to us via [Slack](https://asu.enterprise.slack.com/archives/CMTPR329M)"
+      value: "Thank you for taking the time to fill out this Feedback form.  Please fill out the following information to the best of your ability.  This will help us improve the quality of our instruction"
   - type: input
     id: email
     attributes:
@@ -12,85 +12,12 @@ body:
       description: How can we get in touch with you if we need more info?
       placeholder: ex. email@example.com
     validations:
-      required: true
-  - type: input
-    id: asurite
-    attributes:
-      label: ASURITE
-      description: What is your ASURITE?
-      placeholder: ex. acchapm1
-    validations:
-      required: true
-  - type: dropdown
-    id: cluster
-    attributes:
-      label: Cluster
-      description: Please choose the severity of the impact of this issue.
-      multiple: false
-      options:
-        - 'Sol'
-        - 'Phoenix'
-    validations:
-      required: true
-  - type: input
-    id: name
-    attributes:
-      label: Software Name
-      description: Name of software to be installed?
-      placeholder: ex. OpenFoam
-    validations:
-      required: true
-  - type: input
-    id: versions
-    attributes:
-      label: Software version      
-      placeholder: ex. 2312
-    validations:
-      required: true
-  - type: input
-    id: link
-    attributes:
-      label: Link
-      description: Please provide a link to the software, this will help us expedite the processs.       
-      placeholder: ex. http://github.com/...
-    validations:
       required: false
-  - type: input
-    id: dependencies
-    attributes:
-      label: Dependencies
-      description: If known or there are options for dependecies. Please list any dependencies that are required for this software to run.
-      placeholder: ex. openmpi 4.1.5
-    validations:
-      required: false
-  - type: dropdown
-    id: license
-    attributes:
-      label: License
-      description: Is this licensed software?  If so please provide the license information in the notes section.
-      multiple: false
-      options:
-        - 'No'
-        - 'Yes'
-        - 'Unknown'
-    validations:
-      required: true
-  - type: dropdown
-    id: testcase
-    attributes:
-      label: Test Case
-      description: Do you have a test case or example usage that we can run to test the software?
-      multiple: false
-      options:
-        - 'No'
-        - 'Yes'
-    validations:
-      required: true
   - type: textarea
-    id: notes
+    id: feedback
     attributes:
-      label: Notes
-      description: Is there anything that you want to add?   describe anything additional that you would like to be part of this request.
+      label: Feedback
+      description: Please provide your feedback here.
     validations:
       required: false
 
